@@ -50,7 +50,7 @@ export class CreateCommand extends BaseCommand {
         : bip39.generateMnemonic();
 
       const wallet: Wallet = {
-        accountPath: `m/86'/0'/0'/0/${path_index}`,
+        accountPath: `m/44'/0'/0'/0/${path_index}`,
         name: name,
         mnemonic: mnemonic,
       };
